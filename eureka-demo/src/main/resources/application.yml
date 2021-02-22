@@ -1,0 +1,16 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: eureka-demo
+
+eureka:
+  client:
+    register-with-eureka: false # 是否注册到eureka注册服务中心
+    fetch-registry: false # 是否拉取其他的服务
+    service-url:
+      defaultZone: http://localhost:${server.port}/eureka/
+  server:
+    enable-self-preservation: false # 关闭自我保护机制
+    eviction-interval-timer-in-ms: 5000 # 剔除服务间隔时间，单位：毫秒
