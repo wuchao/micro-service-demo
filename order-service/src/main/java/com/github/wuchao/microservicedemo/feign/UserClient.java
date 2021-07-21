@@ -1,4 +1,4 @@
-package com.github.wuchao.microservicedemo.hystrixdemo.feign;
+package com.github.wuchao.microservicedemo.feign;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;

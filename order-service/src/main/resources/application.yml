@@ -1,0 +1,19 @@
+server:
+  port: 9002
+
+spring:
+  application:
+    name: order-service
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+  instance:
+    prefer-ip-address: true # 使用 ip 地址注册
+    instance-id: ${spring.cloud.client.ip-address}:${server.port} # 向注册中心注册服务 ip
+    lease-renewal-interval-in-seconds: 5 # 心跳监测周期
+    lease-expiration-duration-in-seconds: 10 # 超过多少秒没有心跳就剔除服务

@@ -1,4 +1,4 @@
-package com.github.wuchao.microservicedemo.hystrixdemo.controller;
+package com.github.wuchao.microservicedemo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
