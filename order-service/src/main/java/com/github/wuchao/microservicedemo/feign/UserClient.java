@@ -10,6 +10,6 @@ public interface UserClient {
 
 
     @GetMapping("/users/{id}")
-    public ResponseEntity getUser(@PathVariable("id") Integer id);
+    ResponseEntity getUser(@PathVariable("id") Integer id);
 
 }

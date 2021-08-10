@@ -6,7 +6,7 @@ spring:
     name: order-service
 
 spring-cloud:
-  product-service-url:
+  product-service-url: 127.0.0.1:9002
 
 eureka:
   client:
